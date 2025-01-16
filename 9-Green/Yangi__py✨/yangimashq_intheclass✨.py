@@ -603,6 +603,32 @@ to'xtasin (ikkita shartni ham tekshiring).
 # git config --global user.name "Your Name"
 # git config --global user.email "youremail@domain.com"
 
+""" mashq """
+class Talaba():
+    """..... """
+    def __init__(self,ism:str,familiya:str,yosh:int,baholar:list):
+        self.ism=ism
+        self.familiya=familiya
+        self.yosh=yosh
+        self.baholar=baholar
+
+    def get_info(self):
+        """ .......... """
+        return f"ABOUT ME \nMy name is: {self.ism}🎇, \nMy surname: {self.familiya}✨, \nAge: {self.yosh}🎉, \nBahalor: {self.baholar}"
+
+    def orta(self):
+        """ Show information about"""
+        baholar_sum = sum(self.baholar)
+        baholar_n = len(self.baholar)
+        return baholar_sum/baholar_n
+
+naima=Talaba("Naima","Malikova",16,[3,4,5,])
+print(naima.get_info())
+print(naima.orta())
+
+
+
+
 
 
 
