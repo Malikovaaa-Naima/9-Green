@@ -62,7 +62,7 @@
 #     """ .... """
 #     max = 0
 #     for son in sonlar:
-#          max+=1
+#         max+=1
 #     return max
 
 # number = the_len(2,43,213,-0,23243,67868786,21)
@@ -112,18 +112,17 @@
 # print(my_orta(4,32,))
 
 """ mashq """
-from random import randrange
-comp = randrange(1,10)
-print("Kopmuter bir son oyladi 1,10 gacha ,siz taxmin qilib koring.")
-savol = int(input("1,10 GACHA SON KIRITTING:"))
-if savol >= 1 and savol <= 11:
-    if comp == savol:
-        print(f"Tebriklaymiz bildingiz!✔😁⭐")
-    else:
-        print(f"Xatolik!😂😊😒🤣 {comp} oyludi.")
-else:
-    print("Xatolik! Sizning kiritgan son 1-10 gacha bo'lishgacha kelibsiz.")
+# from random import randrange
+# comp = randrange(1,10)
+# print("Kopmuter bir son oyladi 1,10 gacha ,siz taxmin qilib koring.")
+# savol = int(input("1,10 GACHA SON KIRITTING:"))
+# if savol >= 1 and savol <= 11:
+#     if comp == savol:
+#         print(f"Tebriklaymiz bildingiz!✔😁⭐")
+#     else:
+#         print(f"Xatolik!😂😊😒🤣 {comp} oyludi.")
+# else:
+#     print("Xatolik! Sizning kiritgan son 1-10 gacha bo'lishgacha kelibsiz.")
 
 
- 
 

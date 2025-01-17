@@ -606,11 +606,12 @@ to'xtasin (ikkita shartni ham tekshiring).
 """ mashq """
 class Talaba():
     """..... """
-    def __init__(self,ism:str,familiya:str,yosh:int,baholar:list):
+    def __init__(self,ism:str,familiya:str,yosh:int,baholar:list,freinds:list):
         self.ism=ism
         self.familiya=familiya
         self.yosh=yosh
         self.baholar=baholar
+        self.freind = freinds
 
     def get_info(self):
         """ .......... """
@@ -622,10 +623,23 @@ class Talaba():
         baholar_n = len(self.baholar)
         return baholar_sum/baholar_n
 
-naima=Talaba("Naima","Malikova",16,[3,4,5,])
-print(naima.get_info())
-print(naima.orta())
+    def get_fullname(self):
+        """ Show full name"""
+        return f"{self.ism} {self.familiya}"
+    def get_age(self,now = 2025):
+        """ Show age"""
+        return self.yosh
+    def freinds(self):
+        """ Show friends list"""
+        info = f"{self.ism}'s freinds:"
+        for ism in self.freind:
+            info += f"{ism} "
+        return info
 
+
+naima=Talaba("Naima","Malikova",16,[3,4,5,],["Naima","Mubina","Munisa"])
+print(naima.freinds())
+print(naima.get_info())
 
 
 
