@@ -23,7 +23,19 @@ print(car1.show_info())
 print(car2.show_info())
 
 
+""" obyekt hususiyat va metodlar ko'rish"""
+"""   dir() function """
+from pprint import pprint
 
+print(dir(Car))
+# print(dir(Book))
+
+
+""" __dict__ metodi"""
+"""__dct__ metodi obyektni xususiyatlarini luhgat korinishida qaytaradi"""
+# pprint(h.__dict__)
+pprint(car1.__dict__)
+pprint(car2.__dict__)
 
 
 

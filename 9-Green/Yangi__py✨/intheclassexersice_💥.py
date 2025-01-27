@@ -430,42 +430,42 @@ print(f"Sizlar uchun kirish narhi umumiy  {summa} so'm bo'ldi.❗❗💰💰. ")
 
 """ Do'kon """
 """ -------  Do'kondagi bor mahsulotlarni sanaymiz ------- """
-ombor = ["olma", "olcha", "gilos", "banan", "tarvuz", "malina", "qulubnay", "shaftoli"]
-print(f"Bizda quidagi mahsulotlar bor: ", end="")
-for mahsulot in ombor:
-    if mahsulot == ombor[-1]:
-        print(f"{mahsulot}", end=". ")
-    elif mahsulot == ombor[0]:
-        print(mahsulot.title(), end=", ")
-    else:
-        print(f"{mahsulot}", end=",")
-""" -------  Foydalanuvchidan olmoqchi mahsulotlarini so'raymiz  ------- """
-xarid = int(input("\nNechta mahsulot sotib olmoqchisiz: "))
-bor = []
-yoq = []
-for x in range(xarid):
-    maxsulot = input(f"{x+1}- mahsulotni kiriting: ").lower()
-    if maxsulot in ombor:
-        bor.append(maxsulot)
-    else:
-        yoq.append(maxsulot)
-""" ------- Foydalanuvchi olmoqchi bo'lgan narsalarini bor yoki yo'qligini aytamiz ------- """
-print(f"Siz sotib olmoqchi bo'lgan quidagi {len(bor)} ta mahsulotlar bizning do'konda bor: ", end="")
-for mahsulot in bor:
-    if mahsulot == bor[-1]:
-        print(mahsulot, end=".")
-    elif mahsulot == bor[0]:
-        print(mahsulot.title(), end=", ")
-    else:
-        print(mahsulot, end=", ")
-print(f"\nSiz sotib olmoqchi bo'lgan quidagi {len(yoq)} ta mahsulotlar bizning do'konda yo'q: ", end="")
-for mahsulot in yoq:
-    if mahsulot == yoq[-1]:
-        print(mahsulot, end=".")
-    elif mahsulot == yoq[0]:
-        print(mahsulot.title(), end=", ")
-    else:
-        print(mahsulot, end=", ")
+# ombor = ["olma", "olcha", "gilos", "banan", "tarvuz", "malina", "qulubnay", "shaftoli"]
+# print(f"Bizda quidagi mahsulotlar bor: ", end="")
+# for mahsulot in ombor:
+#     if mahsulot == ombor[-1]:
+#         print(f"{mahsulot}", end=". ")
+#     elif mahsulot == ombor[0]:
+#         print(mahsulot.title(), end=", ")
+#     else:
+#         print(f"{mahsulot}", end=",")
+# """ -------  Foydalanuvchidan olmoqchi mahsulotlarini so'raymiz  ------- """
+# xarid = int(input("\nNechta mahsulot sotib olmoqchisiz: "))
+# bor = []
+# yoq = []
+# for x in range(xarid):
+#     maxsulot = input(f"{x+1}- mahsulotni kiriting: ").lower()
+#     if maxsulot in ombor:
+#         bor.append(maxsulot)
+#     else:
+#         yoq.append(maxsulot)
+# """ ------- Foydalanuvchi olmoqchi bo'lgan narsalarini bor yoki yo'qligini aytamiz ------- """
+# print(f"Siz sotib olmoqchi bo'lgan quidagi {len(bor)} ta mahsulotlar bizning do'konda bor: ", end="")
+# for mahsulot in bor:
+#     if mahsulot == bor[-1]:
+#         print(mahsulot, end=".")
+#     elif mahsulot == bor[0]:
+#         print(mahsulot.title(), end=", ")
+#     else:
+#         print(mahsulot, end=", ")
+# print(f"\nSiz sotib olmoqchi bo'lgan quidagi {len(yoq)} ta mahsulotlar bizning do'konda yo'q: ", end="")
+# for mahsulot in yoq:
+#     if mahsulot == yoq[-1]:
+#         print(mahsulot, end=".")
+#     elif mahsulot == yoq[0]:
+#         print(mahsulot.title(), end=", ")
+#     else:
+#         print(mahsulot, end=", ")
         
 
 """ EXAM...."""
