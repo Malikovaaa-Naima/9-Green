@@ -604,53 +604,53 @@ to'xtasin (ikkita shartni ham tekshiring).
 # git config --global user.email "youremail@domain.com"
 
 """ mashq """
-# class Talaba():
-#     """..... """
-#     def __init__(self,ism:str,familiya:str,yosh:int,baholar:list,freinds:list):
-#         self.ism=ism
-#         self.familiya=familiya
-#         self.yosh=yosh
-#         self.baholar=baholar
-#         self.freind = freinds
+class Talaba():
+    """..... """
+    def __init__(self,ism:str,familiya:str,yosh:int,baholar:list,freinds:list):
+        self.ism=ism
+        self.familiya=familiya
+        self.yosh=yosh
+        self.baholar=baholar
+        self.freind = freinds
 
-#     def get_info(self):
-#         """ .......... """
-#         return f"ABOUT ME \nMy name is: {self.ism}🎇, \nMy surname: {self.familiya}✨, \nAge: {self.yosh}🎉, \nBahalor: {self.baholar}"
+    def get_info(self):
+        """ .......... """
+        return f"ABOUT ME \nMy name is: {self.ism}🎇, \nMy surname: {self.familiya}✨, \nAge: {self.yosh}🎉, \nBahalor: {self.baholar}"
 
-#     def orta(self):
-#         """ Show information about"""
-#         baholar_sum = sum(self.baholar)
-#         baholar_n = len(self.baholar)
-#         return baholar_sum/baholar_n
+    def orta(self):
+        """ Show information about"""
+        baholar_sum = sum(self.baholar)
+        baholar_n = len(self.baholar)
+        return baholar_sum/baholar_n
 
-#     def get_fullname(self):
-#         """ Show full name"""
-#         return f"{self.ism} {self.familiya}"
-#     def get_age(self,now = 2025):
-#         """ Show age"""
-#         return self.yosh
-#     def freinds(self):
-#         """ Show friends list"""
-#         info = f"{self.ism}'s freinds:"
-#         for ism in self.freind:
-#             info += f"{ism} "
-#         return info
-#     def set_kurs(self):
-#         """ Talabani kursini oshiradigan funksiya """
+    def get_fullname(self):
+        """ Show full name"""
+        return f"{self.ism} {self.familiya}"
+    def get_age(self,now = 2025):
+        """ Show age"""
+        return self.yosh
+    def freinds(self):
+        """ Show friends list"""
+        info = f"{self.ism}'s freinds:"
+        for ism in self.freind:
+            info += f"{ism} "
+        return info
+    def set_kurs(self):
+        """ Talabani kursini oshiradigan funksiya """
 
-#         if self.kurs < 6:
-#             self.kurs += 1
-#         else:
-#             return "Siz xoz un iveri tugatgansiz"
-#         return self.kurs
+        if self.kurs < 6:
+            self.kurs += 1
+        else:
+            return "Siz xoz un iveri tugatgansiz"
+        return self.kurs
 
-#     def get_kurs(self):
-#         """ Talabani kursini ko'radigan funksiya """
-#         return self.kurs
+    def get_kurs(self):
+        """ Talabani kursini ko'radigan funksiya """
+        return self.kurs
     
-# naima=Talaba("Naima","Malikova",16,[3,4,5,],["Naima","Mubina","Munisa"])
-# print(naima.freinds())
-# print(naima.get_info())
+naima=Talaba("Naima","Malikova",16,[3,4,5,],["Naima","Mubina","Munisa"])
+print(naima.freinds())
+print(naima.get_info())
 
 
 
