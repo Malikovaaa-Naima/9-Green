@@ -48,7 +48,7 @@ class Student(Shaxs):
           self.sinf1 += 1
           return f"I'm in {self.sinf1} class now"
       else:
-          return "Goodbye👋"
+          return "you finish the school , Goodbye👋"
   
   
   def baholar(self):
@@ -57,7 +57,7 @@ class Student(Shaxs):
 
 
 
-student1 = Student("Naima","Malikova","Murodovna",16,2009,"AC21323424","o'zbek","Boborahim Mashrab",9,[5,5,5,5])
+student1 = Student("Naima","Malikova","Murodovna",16,2009,"AC21323424","o'zbek","Boborahim Mashrab",11,[5,5,5,5])
 
 # print(student1.get_age(2025))
 print(student1.get_info())
