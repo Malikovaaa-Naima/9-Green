@@ -5,56 +5,56 @@ vaqtini soat va minutini aniqlikda hisob qaytaring.
 Namuna: Siz tug'ulgan 15 yilu, 20 kun bo'ldi
 """
 
-import datetime
+# import datetime
 
-def otgan_kunlar(yil:int,oy:int,kun:int):
-    """
-    bu funksiyani butun sinf bn qildik 🎇🎃
-    """
+# def otgan_kunlar(yil:int,oy:int,kun:int):
+#     """
+#     bu funksiyani butun sinf bn qildik 🎇🎃
+#     """
 
-    t_yil = yil
-    t_oy = oy
-    t_kun = kun
-    t_sana = datetime.date(yil,oy,kun)
-    bugun =datetime.date.today()
-
-
-    if (bugun-t_sana).days <=365:
-        return f"Siz tugulganizga {(bugun-t_sana).days} kun bo'ldi💫 "
-
-    elif bugun.month > t_oy:
-        yil = bugun.year - t_yil
-        kun = bugun - datetime.date(bugun.year,t_oy,t_kun)
-        return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi💨 "
-
-    elif bugun.month == t_oy:
-        if bugun.day < t_kun:
-            yil = bugun.year - t_yil -1
-            kun = bugun - datetime.date(bugun.year-1,t_oy,t_kun)
-            return f"Siz tugulganizga {yil}-yilu , {kun.days} kun buldi 💥 "
-
-        elif bugun.day == t_kun:
-            yil = bugun.year - t_yil
-            return f"Siz bugun  {yil} yoshga to'ldingiz .Tabriklaymiz🎉🎊"
-
-        else:
-            yil = bugun.year - t_yil
-            kun = bugun - datetime.date(bugun.year,t_oy,t_kun)
-            return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi🧶."
-
-    else:
-        yil = bugun.year - t_yil -1
-        kun = bugun - datetime.date(bugun.year-1,t_oy,t_kun)
-        return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi💎."
+#     t_yil = yil
+#     t_oy = oy
+#     t_kun = kun
+#     t_sana = datetime.date(yil,oy,kun)
+#     bugun =datetime.date.today()
 
 
-yil = int(input("Tug'ulgan yilingizni kiriting:"))
-oy = int(input("Tug'ulgan oyingizni kiriting:"))
-kun = int(input("Tug'ulgan kuningizni kiriting:"))
+#     if (bugun-t_sana).days <=365:
+#         return f"Siz tugulganizga {(bugun-t_sana).days} kun bo'ldi💫 "
 
-user = otgan_kunlar(yil,oy,kun)
+#     elif bugun.month > t_oy:
+#         yil = bugun.year - t_yil
+#         kun = bugun - datetime.date(bugun.year,t_oy,t_kun)
+#         return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi💨 "
 
-print(user)
+#     elif bugun.month == t_oy:
+#         if bugun.day < t_kun:
+#             yil = bugun.year - t_yil -1
+#             kun = bugun - datetime.date(bugun.year-1,t_oy,t_kun)
+#             return f"Siz tugulganizga {yil}-yilu , {kun.days} kun buldi 💥 "
+
+#         elif bugun.day == t_kun:
+#             yil = bugun.year - t_yil
+#             return f"Siz bugun  {yil} yoshga to'ldingiz .Tabriklaymiz🎉🎊"
+
+#         else:
+#             yil = bugun.year - t_yil
+#             kun = bugun - datetime.date(bugun.year,t_oy,t_kun)
+#             return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi🧶."
+
+#     else:
+#         yil = bugun.year - t_yil -1
+#         kun = bugun - datetime.date(bugun.year-1,t_oy,t_kun)
+#         return f"Siz tugulganizga {yil} - yilu , {kun.days} kun buldi💎."
+
+
+# yil = int(input("Tug'ulgan yilingizni kiriting:"))
+# oy = int(input("Tug'ulgan oyingizni kiriting:"))
+# kun = int(input("Tug'ulgan kuningizni kiriting:"))
+
+# user = otgan_kunlar(yil,oy,kun)
+
+# print(user)
 
 
 
@@ -93,6 +93,45 @@ print(user)
 #     yil = bugun.year - t_yil -1
 #     kun = bugun - datetime.date(bugun.year-1,t_oy,t_kun)
 #     print(f"siz tugulganizga {yil}-yilu , {kun.days} kun buldi🎀")
+
+
+
+
+""" 3 mashq """
+
+import datetime
+
+
+bugun = datetime.date.today()
+ 
+oy = int(input("oy kiriting:"))
+kun = int(input("kun kiriting:"))
+
+sana1 = datetime.date(bugun.year,oy,kun)
+sana2 = datetime.date(bugun.year+1,oy,kun)
+
+
+if sana1 > bugun:
+    print(f"Sizning tug'ilgan kuningizga {(sana1-bugun).days} kun qoldi.")
+elif sana1 < bugun:
+    print(f"Sizning tug'ilgan kuningizga {(sana2-bugun).days} kun qoldi.")
+
+else:
+    print("Bugun sizning tug'ilgan kuningizni nishonlanmoqda🎉🎊🥳")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
