@@ -102,32 +102,31 @@ Namuna: Siz tug'ulgan 15 yilu, 20 kun bo'ldi
 import datetime
 
 
-bugun = datetime.date.today()
+# bugun = datetime.date.today()
  
-oy = int(input("oy kiriting:"))
-kun = int(input("kun kiriting:"))
+# oy = int(input("oy kiriting:"))
+# kun = int(input("kun kiriting:"))
 
-sana1 = datetime.date(bugun.year,oy,kun)
-sana2 = datetime.date(bugun.year+1,oy,kun)
-
-
-if sana1 > bugun:
-    print(f"Sizning tug'ilgan kuningizga {(sana1-bugun).days} kun qoldi.")
-elif sana1 < bugun:
-    print(f"Sizning tug'ilgan kuningizga {(sana2-bugun).days} kun qoldi.")
-
-else:
-    print("Bugun sizning tug'ilgan kuningizni nishonlanmoqda🎉🎊🥳")
+# sana1s = datetime.date(bugun.year,oy,kun)
+# sana2 = datetime.date(bugun.year+1,oy,kun)
 
 
+# if sana1 > bugun:
+#     print(f"Sizning tug'ilgan kuningizga {(sana1-bugun).days} kun qoldi.")
+# elif sana1 < bugun:
+#     print(f"Sizning tug'ilgan kuningizga {(sana2-bugun).days} kun qoldi.")
+
+# else:
+#     print("Bugun sizning tug'ilgan kuningizni nishonlanmoqda🎉🎊🥳")
 
 
 
+""" 4 mashq """
+# bugun = datetime.date.today()
+# kun = int(input("Necha kundan keyingi sanani bilmoqchisiz:"))
+# sana = bugun + datetime.timedelta(days= kun)
 
-
-
-
-
+# print(sana)
 
 
 
