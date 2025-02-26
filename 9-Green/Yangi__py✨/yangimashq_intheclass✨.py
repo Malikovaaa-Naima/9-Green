@@ -603,149 +603,176 @@ to'xtasin (ikkita shartni ham tekshiring).
 # git config --global user.name "Your Name"
 # git config --global user.email "youremail@domain.com"
 
+# """ mashq """
+# class Talaba():
+#     """..... """
+#     def __init__(self,ism:str,familiya:str,yosh:int,baholar:list,freinds:list):
+#         self.ism=ism
+#         self.familiya=familiya
+#         self.yosh=yosh
+#         self.baholar=baholar
+#         self.freind = freinds
+
+#     def get_info(self):
+#         """ .......... """
+#         return f"ABOUT ME \nMy name is: {self.ism}🎇, \nMy surname: {self.familiya}✨, \nAge: {self.yosh}🎉, \nBahalor: {self.baholar}"
+
+#     def orta(self):
+#         """ Show information about"""
+#         baholar_sum = sum(self.baholar)
+#         baholar_n = len(self.baholar)
+#         return baholar_sum/baholar_n
+
+#     def get_fullname(self):
+#         """ Show full name"""
+#         return f"{self.ism} {self.familiya}"
+#     def get_age(self,now = 2025):
+#         """ Show age"""
+#         return self.yosh
+#     def freinds(self):
+#         """ Show friends list"""
+#         info = f"{self.ism}'s freinds:"
+#         for ism in self.freind:
+#             info += f"{ism} "
+#         return info
+#     def set_kurs(self):
+#         """ Talabani kursini oshiradigan funksiya """
+
+#         if self.kurs < 6:
+#             self.kurs += 1
+#         else:
+#             return "Siz xoz un iveri tugatgansiz"
+#         return self.kurs
+
+#     def get_kurs(self):
+#         """ Talabani kursini ko'radigan funksiya """
+#         return self.kurs
+    
+# naima=Talaba("Naima","Malikova",16,[3,4,5,],["Naima","Mubina","Munisa"])
+# print(naima.freinds())
+# print(naima.get_info())
+
+
+
+# """ mashq """
+# class library():
+#     def __init__(self, name,address):
+#         self.name = name
+#         self.address = address
+#         self.books = []
+#         self.books_count = 0
+#     def __str__(self):
+#         return self.name
+    
+#     def get_info(self):
+#         """ ... """
+#         return f"Library name: {self.name}, Address: {self.address}"
+
+#     def get_books(self):
+#         """ ... """
+#         return len(self.books)
+    
+#     def add_book(self, book):
+#         """ ... """
+#         if self.books_count >= 10:
+#             print("The library is full!")
+#         else:
+#             self.books_count += 1
+#             print(f"{book} is added to the library!")
+#             self.books.append(book)
+    
+#     def del_book(self, book):
+#         """ ... """
+#         if book in self.books:
+#             self.books.remove(book)
+#             self.books_count -= 1
+#             print(f"{book} is removed from the library!")
+#         else:
+#             print(f"{book} is not found in the library!")
+    
+
+# h = library("nodirabegim","micrayonda")
+# print(h.get_info())
+# print(h.get_books())
+# print(h.add_book("otkan"))
+
+
+# """ mashq """
+# class Book():
+#     def __init__(self, name:str, author:str, year:int, publisher:str,price:int):
+#         self.name = name
+#         self.author = author
+#         self.year = year
+#         self.publisher = publisher
+#         self.price = price
+
+
+#     def __str__(self):
+#         return self.name
+#     def get_info(self):
+#         """ ... """
+#         return f"Book name: {self.name}, Author: {self.author}, Year: {self.year}, Publisher: {self.publisher}, Price: {self.price}$"
+    
+#     def get_price(self):
+#         """ ... """
+#         return self.price
+    
+#     def get_name(self):
+#         """ ... """
+#         return self.name
+    
+# book1 =Book("Ikki eshik orasida","O'tkir Hoshimov",1988,"Ziyo",69_00000)
+# book2 =Book("O'tkan kunlar","Abdulla Qodiriy",1890,"Oliy",355_00000)
+
+# print(book1.get_info())
+# print(book2.get_info())
+# # print(book1.get_price())
+# # print(book1.get_name())
+
+
+# """ obyekt hususiyat va metodlar ko'rish"""
+# """   dir() function """
+# from pprint import pprint
+
+# print(dir(library))
+# print(dir(Book))
+
+
+# """ __dict__ metodi"""
+# """__dct__ metodi obyektni xususiyatlarini luhgat korinishida qaytaradi"""
+# pprint(h.__dict__)
+# pprint(book1.__dict__)
+# pprint(book2.__dict__)
+
+
+
 """ mashq """
-class Talaba():
-    """..... """
-    def __init__(self,ism:str,familiya:str,yosh:int,baholar:list,freinds:list):
-        self.ism=ism
-        self.familiya=familiya
-        self.yosh=yosh
-        self.baholar=baholar
-        self.freind = freinds
-
-    def get_info(self):
-        """ .......... """
-        return f"ABOUT ME \nMy name is: {self.ism}🎇, \nMy surname: {self.familiya}✨, \nAge: {self.yosh}🎉, \nBahalor: {self.baholar}"
-
-    def orta(self):
-        """ Show information about"""
-        baholar_sum = sum(self.baholar)
-        baholar_n = len(self.baholar)
-        return baholar_sum/baholar_n
-
-    def get_fullname(self):
-        """ Show full name"""
-        return f"{self.ism} {self.familiya}"
-    def get_age(self,now = 2025):
-        """ Show age"""
-        return self.yosh
-    def freinds(self):
-        """ Show friends list"""
-        info = f"{self.ism}'s freinds:"
-        for ism in self.freind:
-            info += f"{ism} "
-        return info
-    def set_kurs(self):
-        """ Talabani kursini oshiradigan funksiya """
-
-        if self.kurs < 6:
-            self.kurs += 1
-        else:
-            return "Siz xoz un iveri tugatgansiz"
-        return self.kurs
-
-    def get_kurs(self):
-        """ Talabani kursini ko'radigan funksiya """
-        return self.kurs
-    
-naima=Talaba("Naima","Malikova",16,[3,4,5,],["Naima","Mubina","Munisa"])
-print(naima.freinds())
-print(naima.get_info())
-
-
+import re
+#1
+# matn= """salom mening ismim Naima 
+#             mening familiyam Malikova
+#             Yoshim 15da.
+#             men 2009-11-23 da tugulganman
+#             men yaqinda passport oldim ,
+#             bu mening passport seriyam --> AC1234567
+# """
+# andoza = r'\b[a-z]{5}\b'
+# print(re.findall(andoza,matn))
+# #2
+# sana_andoza ="[0-9]{4}[-][0-9]{2}[-][0-9]{2}"
+# sana = re.search(sana_andoza,matn)
+# print(sana)
 
 """ mashq """
-class library():
-    def __init__(self, name,address):
-        self.name = name
-        self.address = address
-        self.books = []
-        self.books_count = 0
-    def __str__(self):
-        return self.name
-    
-    def get_info(self):
-        """ ... """
-        return f"Library name: {self.name}, Address: {self.address}"
+m = """ +998(99)543-43-43
+        998(99)543-43-43
+        +998 99 543-43-43
+"""
 
-    def get_books(self):
-        """ ... """
-        return len(self.books)
-    
-    def add_book(self, book):
-        """ ... """
-        if self.books_count >= 10:
-            print("The library is full!")
-        else:
-            self.books_count += 1
-            print(f"{book} is added to the library!")
-            self.books.append(book)
-    
-    def del_book(self, book):
-        """ ... """
-        if book in self.books:
-            self.books.remove(book)
-            self.books_count -= 1
-            print(f"{book} is removed from the library!")
-        else:
-            print(f"{book} is not found in the library!")
-    
+andoza ="[+]?[0-9]{3}[()][0-9]{2}[()][0-9]{3}[-][0-9]{2}[-][0-9]{2}"
 
-h = library("nodirabegim","micrayonda")
-print(h.get_info())
-print(h.get_books())
-print(h.add_book("otkan"))
-
-
-""" mashq """
-class Book():
-    def __init__(self, name:str, author:str, year:int, publisher:str,price:int):
-        self.name = name
-        self.author = author
-        self.year = year
-        self.publisher = publisher
-        self.price = price
-
-
-    def __str__(self):
-        return self.name
-    def get_info(self):
-        """ ... """
-        return f"Book name: {self.name}, Author: {self.author}, Year: {self.year}, Publisher: {self.publisher}, Price: {self.price}$"
-    
-    def get_price(self):
-        """ ... """
-        return self.price
-    
-    def get_name(self):
-        """ ... """
-        return self.name
-    
-book1 =Book("Ikki eshik orasida","O'tkir Hoshimov",1988,"Ziyo",69_00000)
-book2 =Book("O'tkan kunlar","Abdulla Qodiriy",1890,"Oliy",355_00000)
-
-print(book1.get_info())
-print(book2.get_info())
-# print(book1.get_price())
-# print(book1.get_name())
-
-
-""" obyekt hususiyat va metodlar ko'rish"""
-"""   dir() function """
-from pprint import pprint
-
-print(dir(library))
-print(dir(Book))
-
-
-""" __dict__ metodi"""
-"""__dct__ metodi obyektni xususiyatlarini luhgat korinishida qaytaradi"""
-pprint(h.__dict__)
-pprint(book1.__dict__)
-pprint(book2.__dict__)
-
-
-
+sana = re.findall(andoza,m)
+print(sana)
 
 
 
